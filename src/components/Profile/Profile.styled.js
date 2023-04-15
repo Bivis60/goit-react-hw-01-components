@@ -3,7 +3,9 @@ import styled from 'styled-components';
 export const ProfileCard = styled.div`
   border: solid 4px #212121;
   width: 268px;
-  margin: 0 auto;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 12px;
   padding: 16px;
   background-color: ${p => p.theme.colors.background};
@@ -41,6 +43,7 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
+  outline: 1px solid black;
   background-color: #d0d5ed;
   padding: 8px 12px;
   border-radius: 6px;

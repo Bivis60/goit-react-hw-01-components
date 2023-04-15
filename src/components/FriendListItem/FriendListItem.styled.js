@@ -6,7 +6,7 @@ export const Item = styled.li`
   align-items: center;
   justify-content: space-around;
   gap: 24px;
-  padding: 8px 32px;
+  padding: 8px 36px;
   background-color: ${p => p.theme.colors.background};
   outline: 1px solid black;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
@@ -17,12 +17,12 @@ export const Span = styled.span`
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: ${props => {
-    return props.active ? props.theme.colors.green : props.theme.colors.accent;
+  background-color: ${p => {
+    return p.active ? p.theme.colors.green : p.theme.colors.accent;
   }};
 `;
 
 export const Name = styled.p`
-font-size: 20px;
-font-weight: 700;
+  font-size: 20px;
+  font-weight: 700;
 `;
